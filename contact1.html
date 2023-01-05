@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixing Computer System</title>
+
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<link rel="stylesheet" href="style.css">
+
+<style>
+
+	.container{
+		position: absolute;
+		top: 20rem;
+		right: 10rem;
+		left: 10rem;
+		padding-left: 5rem;
+		padding-top: 5rem;
+		padding-right: 5rem;
+		padding-bottom: 5rem;
+		padding-top: 0rem;
+		border-radius: 10px;
+		background-color: rgb(228, 235, 241);
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 15);
+		
+	}
+
+.init{	 
+	border-radius: 60rem;
+	height:50rem;
+	border: 10rem; 
+	float:right;
+}
+
+.set{
+	padding-top: 8rem;	
+}
+.letter{
+	font-size: 5rem;
+	padding-bottom: 15rem;
+}
+.small{
+  font-family: 'Quicksand', sans-serif;
+	font-size: 2.4rem;
+	padding-top: 3rem;
+}
+
+.iv{
+	padding-bottom: 4rem;
+	padding-top: 1rem;
+}
+
+.footer {
+	margin-top: 170rem;
+}
+</style>
+
+
+</head>
+
+<body>
+
+	<!-- header section -->
+	<header class="header">
+			<div class="logoContent">
+				<a href="index.html" class="logo"><img src="images/logo3.PNG" alt=""></a>
+				<h1 class="logoName">TroubleTech.net </h1>
+			</div>
+
+			<nav class="navbar">
+				<a href="index.html">home</a>
+				<a href="index.html#product">Problem</a>
+				<a href="index.html#blogs">Prevention</a>
+				<a href="index.html#review">Review</a>
+				<a href="index.html#contact">contact</a>		
+		</nav>
+    <div class="icon">
+			<i class="fas fa-search" id="search"></i>
+			<i class="fas fa-bars" id="menu-bar"></i>
+		</div>
+	</header>
+
+<section>
+
+	<div class="container">
+		<div class="Heating">
+			<img class="init" src="images/internet.PNG" alt="">
+		<div>
+			<b class="letter">Network Down</b>
+			<p class="small">				
+      Usually, this happens when there is a problem with your internet service provider (ISP), router, or modem.
+       It could also be one of the most common troubleshooting computer problems where you’ve tried every possible on/off means to adjust internet connectivity.
+		</p>
+		</div>
+		<div class="set">
+			<b class="letter"> SOLUTION: </b>
+			<p class="small">
+        Open the registry center from settings or directly type “Regedit” in your search bar to navigate the center. In the registry center, click on the “HKEY local machine” then select system >> current control set >> services>>NlaSvc >>parameters >> internet. When you get to the internet tab, right-click on “enable active probing” select modify and edit the value data from 0 to 1 then save your edit.
+         Now restart your computer, and once it’s back on, go to device manager and click on network adaptors, then right-click on “Intel® ethernet” then uninstall devices (uncheck the “delete the driver” option as we still need the driver). Once you uninstall, restart your pc and the driver will automatically refresh the drivers.
+		</div>
+</div>
+<div class="small">
+	<h1>
+		For further explanation watch this video 
+	</h1>
+	<p class="iv"> by Sandeep Singh	</p>
+</div>
+<iframe class="bedyo" width="1000" height="500" src="https://www.youtube.com/embed/NVCh_ECxgGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</section>
+
+<footer class="footer" id="contact">
+		<div class="box-container">
+				<div class="mainBox">
+						<div class="content">
+								<a href="#"><img src="images/logo3.PNG" alt=""></a>
+								<h1 class="logoName">TroubleTech.net </h1>
+						</div>
+						<p>Thank you for using our website</p>
+						<p>if you have any concern Contact us</p>
+	
+				</div>
+				<div class="box">
+						<h3>Quick link</h3>
+						<a href="#"> <i class="fas fa-arrow-right"></i>Home</a>
+						<a href="#"> <i class="fas fa-arrow-right"></i>problem</a>
+						<a href="#"> <i class="fas fa-arrow-right"></i>issue</a>
+						<a href="#"> <i class="fas fa-arrow-right"></i>review</a>
+						<a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+	
+				</div>
+				<div class="box">
+						<h3>Contact Info</h3>
+						<a href="#"> <i class="fas fa-phone"></i>+9466546546</a>
+						<a href="mailto: antoniojoelouis@gmail.com"> <i class="fas fa-envelope"></i>antoniojoelouis@gmail.con</a>
+	
+				</div>
+	
+		</div>
+		<div class="share">
+				<a href="https://www.facebook.com/CarloRiotita30" class="fab fa-facebook-f"></a>
+				<a href="#" class="fab fa-twitter"></a>
+				<a href="#" class="fab fa-instagram"></a>
+		</div>
+		<div class="credit">
+				created by<span>GROUP 3</span> 
+		</div>
+	</footer>
+
+	
+<script src="index.js"></script>
+
+</body>
+</html>
